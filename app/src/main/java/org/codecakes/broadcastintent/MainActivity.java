@@ -26,10 +26,11 @@ public class MainActivity extends PluginActivity {
         // use the library
 //        notificationLed3Show(LedColor.YELLOW);  // this works
 
-        Intent closeCameraIntent = new Intent("com.theta360.ACTION_MAIN_CAMERA_CLOSE");
-        sendBroadcast(closeCameraIntent);
+//        Intent closeCameraIntent = new Intent("com.theta360.ACTION_MAIN_CAMERA_CLOSE");
+//        sendBroadcast(closeCameraIntent);
 
-
+        Intent openCameraIntent = new Intent("com.theta360.plugin.ACTION_CAMERA_OPEN");
+        sendBroadcast(openCameraIntent);
     }
 
     @Override
